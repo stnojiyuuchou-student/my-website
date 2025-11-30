@@ -133,6 +133,75 @@
             nav { display: none; /* スマホではメニューを一旦隠す */ }
             .hero-title { font-size: 2.5rem; }
         }
+        /* --- タイムラインのスタイル --- */
+        .timeline-section {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto; /* 中央寄せ */
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            letter-spacing: 0.1em;
+            color: #c9a66b; /* ゴールド */
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            border-left: 1px solid rgba(201, 166, 107, 0.3); /* 薄いゴールドの線 */
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        /* タイムラインの丸ポチ */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -46px; /* 線の真上に配置 */
+            top: 5px;
+            width: 11px;
+            height: 11px;
+            background-color: #c9a66b;
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: #c9a66b;
+            font-family: 'Cormorant Garamond', serif;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .timeline-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .timeline-content p {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin: 0;
+            line-height: 1.6;
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        /* 琵琶湖の写真など画像を埋め込む用 */
+        .timeline-img {
+            margin-top: 15px;
+            width: 100%;
+            border-radius: 4px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .timeline-img:hover { opacity: 1; }
     </style>
 </head>
 <body>
@@ -153,6 +222,76 @@
             <h1 class="hero-title">Think and act<br>by yourself</h1>
             <p class="hero-subtitle">自ら考え、行動する。えすてぃの自由帳。</p>
             <a href="https://www.youtube.com/@stno_jiyuuchou" class="btn">最新の活動を見る</a>
+        </div>
+    </section>
+    <section class="timeline-section">
+        <h2 class="section-title">History of Action</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-date">2024.08 - 2025.07</span>
+                <div class="timeline-content">
+                    <h3>CroMen / Cross Mentorship</h3>
+                    <p>大学生向けメンターシッププログラムに参加。自己分析とキャリア形成の基盤を構築。</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">2025.01</span>
+                <div class="timeline-content">
+                    <h3>Tips Tohoku Event Organizer</h3>
+                    <p>やる気のある大学生向けの交流イベントを主催。東北の学生コミュニティを活性化。</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">2025.03</span>
+                <div class="timeline-content">
+                    <h3>Thailand Study Tour</h3>
+                    <p>国際協力の観点からタイ現地を訪問。現地の子供たちとの交流を通じ、教育格差の現状を視察。</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">2025.07</span>
+                <div class="timeline-content">
+                    <h3>Kyoto Train Party</h3>
+                    <p>京都にて電車を貸し切り、交流パーティをゼロから企画・主催。参加者の記憶に残る非日常体験を創出。</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">2025.07 - 2025.10</span>
+                <div class="timeline-content">
+                    <h3>ASEF Young Leaders Summit (ASEFYLS6th)</h3>
+                    <p>Asia Europe Foundation主催のサミットに参加。アジア・欧州の若手リーダーと議論を交わす。</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">2025.08</span>
+                <div class="timeline-content">
+                    <h3>Lake Biwa 3-Legged Race</h3>
+                    <p>「限界への挑戦」をテーマに、琵琶湖一周（ビワイチ）を二人三脚で走破。</p>
+                    </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">2025.08 - Present</span>
+                <div class="timeline-content">
+                    <h3>Education Venture</h3>
+                    <p>教育系ベンチャーにて、小学生向けの学習指導および教材開発・修正に従事。</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-date">2025.11 - Present</span>
+                <div class="timeline-content">
+                    <h3>YouTube "ST's Life Notebook"</h3>
+                    <p>チャンネル「えすてぃの自由帳」始動。すべての経験と挑戦をここにアーカイブする。</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
