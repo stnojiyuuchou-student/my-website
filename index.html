@@ -6,6 +6,8 @@
     <title>えすてぃの自由帳 - Think and act by yourself</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif+JP:wght@300;600&display=swap" rel="stylesheet">
     <style>
+
+        html { scroll-behavior: smooth; }
         /* --- 基本設定 --- */
         body {
             margin: 0;
@@ -210,10 +212,12 @@
         <div class="logo gold-text">ST's Life Notebook</div>
         <nav>
             <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <ul>
+                <li><a href="#">ABOUT</a></li> 
+                <li><a href="#projects">PROJECTS</a></li> 
+                <li><a href="#contact">CONTACT</a></li> 
             </ul>
+
         </nav>
     </header>
 
@@ -224,7 +228,7 @@
             <a href="https://www.youtube.com/@stno_jiyuuchou" class="btn">最新の活動を見る</a>
         </div>
     </section>
-    <section class="timeline-section">
+    <section class="timeline-section" id="projects">
         <h2 class="section-title">History of Action</h2>
         
         <div class="timeline">
@@ -292,6 +296,16 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+    <section id="contact" style="background-color: #050505; padding: 60px 20px; text-align: center; margin-top: 50px;">
+        <h2 class="section-title">Contact</h2>
+        <p style="color: #ccc; margin-bottom: 40px;">お仕事の依頼、コラボのご相談はこちらから。</p>
+        
+        <a href="mailto:your-email@example.com" class="btn" style="margin-bottom: 20px;">Email Me</a>
+        
+        <div style="margin-top: 40px; font-size: 0.8rem; color: #666;">
+            &copy; 2025 ST's Life Notebook. All Rights Reserved.
         </div>
     </section>
 
